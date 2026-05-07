@@ -79,3 +79,70 @@ modeling, and business intelligence visualization.
 ---
 
 ## Data Pipeline
+Kaggle — 9 raw CSV files (47MB)
+↓
+Google BigQuery — uploaded as raw tables
+↓
+SQL Cleaning and Transformation
+(Data Cleaning File.sql)
+↓
+Aggregated tables created:
+· master_orders_agg
+· category_performance
+· customer_segment
+· retention_rate
+· segment_revenue
+↓
+Power BI Desktop — connected to BigQuery
+↓
+5-page interactive dashboard (Project.pbix)
+
+---
+
+## 📋 Dataset Information
+
+Source: Olist Brazilian E-Commerce Public Dataset
+Available at: https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce
+
+| File | Description | Rows |
+|------|-------------|------|
+| olist_orders_dataset.csv | Order headers | 99,441 |
+| olist_order_items_dataset.csv | Order line items | 112,650 |
+| olist_customers_dataset.csv | Customer details | 99,441 |
+| olist_products_dataset.csv | Product catalogue | 32,951 |
+| olist_order_reviews_dataset.csv | Customer reviews | 99,224 |
+| olist_order_payments_dataset.csv | Payment details | 103,886 |
+| olist_sellers_dataset.csv | Seller details | 3,095 |
+| olist_geolocation_dataset.csv | Geographic data | 1,000,163 |
+| product_category_name_translation.csv | Category translations | 71 |
+
+Final clean dataset: 96,134 orders · Jan 2017 – Aug 2018
+
+---
+
+## 🚀 How to Reproduce
+
+1. Download Olist dataset from Kaggle link above
+2. Create a Google BigQuery project
+3. Upload all 9 CSV files as raw tables
+4. Run Data Cleaning File.sql in BigQuery
+5. Open Project.pbix in Power BI Desktop
+6. Update BigQuery connection to your project ID
+7. Refresh data — all 5 pages load automatically
+
+---
+
+## 👩‍💻 About the Author
+
+**Rutvi Patel**
+Computer Engineering Student · Carleton University · Ottawa, Canada
+Specializing in Data Analytics — SQL · Power BI · Tableau · Python · BigQuery
+
+LinkedIn: https://www.linkedin.com/in/rutvi-patel-2b8493217/
+
+---
+
+## 📄 License
+
+This project uses publicly available data from Kaggle under the
+CC BY-NC-SA 4.0 license.
